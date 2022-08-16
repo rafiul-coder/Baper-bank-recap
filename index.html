@@ -14,5 +14,63 @@
         <span class="text-red-500 font-medium mt-5">Baap-er-Bank</span>!!!
       </h1>
     </header>
+    <main>
+      <!-- balance and transection summary -->
+      <section class="mt-8">
+        <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+          <div class="bg-lime-600 p-8 rounded-lg">
+            <h4 class="text-3xl">Deposit</h4>
+            <h2 class="text-5xl font-medium">
+              $<span id="deposit-total">00</span>
+            </h2>
+          </div>
+          <div class="bg-green-700 p-8 rounded-lg">
+            <h4 class="text-3xl">Withdraw</h4>
+            <h2 class="text-5xl font-medium">
+              $<span id="withdraw-total">00</span>
+            </h2>
+          </div>
+          <div class="bg-violet-800 p-8 rounded-lg">
+            <h4 class="text-3xl">Total Amount</h4>
+            <h2 class="text-5xl font-medium">
+              $<span id="balance-total">1240</span>
+            </h2>
+          </div>
+        </div>
+      </section>
+      <!-- Deposit and Withdraw section -->
+      <section class="mt-8 w-3/4 mx-auto">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-blue-700 p-8 rounded-lg">
+            <h3 class="text-4xl text-white mb-4">Your Deposit</h3>
+            <input
+              class="w-3/4 px-4 py-3 rounded-lg block"
+              type="text"
+              placeholder="$ Amount you want to deposit"
+            />
+            <button
+              id="btn-deposit"
+              class="bg-blue-400 px-6 py-2 rounded-lg mt-4 text-white font-medium hover:bg-lime-600"
+            >
+              Deposit
+            </button>
+          </div>
+          <div class="bg-amber-700 p-8 rounded-lg">
+            <h3 class="text-4xl text-white mb-4">Your Withdraw</h3>
+            <input
+              class="w-3/4 px-4 py-3 rounded-lg block"
+              type="text"
+              placeholder="$ Amount you want to withdraw"
+            />
+            <button
+              id="btn-withdraw"
+              class="bg-sky-600 px-6 py-2 rounded-lg mt-4 text-white font-medium hover:bg-red-600"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
